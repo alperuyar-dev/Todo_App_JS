@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  background-color: #228be6;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.8rem;
+  padding: 10px;
+}
+hr {
+  border: 1px solid white;
+  width: 90%;
+  margin: auto;
+}
+#out-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1c7ed6;
+  width: 850px;
+  padding: 30px;
+  gap: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.2);
+}
+.text-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#task-entry {
+  width: 500px;
+  height: 50px;
+  font-size: 1.5rem;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+}
+#task-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.task-management {
+  display: flex;
+  width: 800px;
+  justify-content: space-around;
+  align-items: center;
+}
+.lists {
+  flex-basis: 50%;
+  height: 300px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.2);
+  margin: 0 12px;
+  overflow: scroll;
+  background-color: #1971c2;
+}
+
+/* JavaScript Part */
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  width: 90%;
+  height: 60px;
+  background-color: white;
+  padding-left: 10px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  overflow: scroll;
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.2);
+}
+
+.todo-delete {
+  margin: 5px 0;
+  height: 40px;
+  width: 40px;
+  background-color: red;
+  border: none;
+  background: url("./icons8-delete.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.todo-done {
+  margin: 5px 0;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  background: url("./icons8-tick-box.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.completed-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  width: 90%;
+  height: 60px;
+  background-color: white;
+  padding-left: 10px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  overflow: scroll;
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.2);
+}
